@@ -1,0 +1,40 @@
+<!DOCTYPE html >
+
+<head>
+    <title>
+        Recorder
+    </title>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    
+</head>
+
+<body>
+    <div>
+        <h1 class="m-1">Recorder 1.0</h1>
+        <P>*Recording file size limit depends on your RAM</P>
+        <button type="button" class="btn btn-danger m-1" id="stop" disabled>Stop</button>
+        <button type="button" onclick="recordAudio()" class="btn btn-primary m-1">Record Audio</button>
+        <button type="button" onclick="recordVideo()" class="btn btn-primary m-1">Record Camera</button>
+        <button type="button" onclick="recordScreen()" class="btn btn-primary m-1">Record Screen</button>
+        <a id="download"><button type="button" class="btn btn-outline-primary m-1" disabled>Download Recording</button></a><br>
+        
+    </div>
+
+    <!-- show user the screen that is being recorded-->
+    <div>
+        <p id="preview-text">Preview</p>
+        <video width="1280" height="720" autoplay muted id="preview"></video>
+    </div>
+    <div>
+        <p id="recording-text"><span>Recorded video/audio &nbsp;</span><span id=""></span></p>
+        <video width="1280" height="720" controls id="recording"></video><br>
+        
+        
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>

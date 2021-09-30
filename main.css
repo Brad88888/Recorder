@@ -1,0 +1,17 @@
+body{
+    text-align: center;
+}
+
+#recording, #recording-text, #preview-text{
+    display: none;
+}
+
+#recording-text, #preview-text{
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.btn-outline-primary{
+    font-size: 15px;
+}
