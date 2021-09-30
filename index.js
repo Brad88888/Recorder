@@ -46,7 +46,7 @@ const handleRecord = function ({ stream, mimeType }) {
             type: mimeType
         });
         recordedChunks = []
-        const filename = window.prompt('Provde a name for the recorded file');
+        const filename = window.prompt('Provide a name for the recorded file');
         downloadLink.href = URL.createObjectURL(blob);
         downloadLink.download = `${filename || 'Recording'}.webm`;
         stopRecord();
