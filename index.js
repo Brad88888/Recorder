@@ -58,6 +58,7 @@ const handleRecord = function ({ stream, mimeType }) {
         $('#preview').css('display', 'none');
         $('#recording').css('display', 'inline');
         $('#recording-text').css('display', 'block');
+        $('#stop').prop('disabled', true);
         $('#size').html('(file size: ' + size.toFixed(0) + 'KB)');
         window.alert('Your recording is now available for download');
 
