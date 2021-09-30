@@ -61,7 +61,6 @@ const handleRecord = function ({ stream, mimeType }) {
         $('#size').html('(file size: ' + size.toFixed(0) + 'KB)');
 
     };
-
     mediaRecorder.start(200);
 };
 
