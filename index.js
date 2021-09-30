@@ -59,6 +59,7 @@ const handleRecord = function ({ stream, mimeType }) {
         $('#recording').css('display', 'inline');
         $('#recording-text').css('display', 'block');
         $('#size').html('(file size: ' + size.toFixed(0) + 'KB)');
+        window.alert('Your recording is now available for download');
 
     };
     mediaRecorder.start(200);
